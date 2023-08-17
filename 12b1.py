@@ -7,17 +7,17 @@ def draw_square(turtle, size):
         turtle.left(90)
         turtle.speed(-1)
 
-if __name__ == "__main__":
-    wn = turtle.Screen()
-    wn.bgcolor("black")
 
-    alex = turtle.Turtle()
-    alex.color("white")
-    alex.pensize(3)
-    boxes = 100
+wn = turtle.Screen()
+wn.bgcolor("black")
 
-    for _ in range(boxes):
-        draw_square(alex, 200)
-        alex.left(360 / boxes)
+alex = turtle.Turtle()
+alex.color("blue")
+alex.pensize(3)
+boxes = 100
 
-    wn.mainloop()
+for _ in range(boxes):
+     draw_square(alex, 200)
+     alex.left(360 / boxes)
+
+wn.mainloop()

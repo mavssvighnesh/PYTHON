@@ -7,7 +7,7 @@ def reverse_string(str1):
 
 
 def test_reverse_string():
-  assert reverse_string("hello") == "olleh"
-  assert reverse_string("python") == "nohtyp"
-  assert reverse_string("12345") == "54321"
+  assert (reverse_string("hello") == "olleh")==True
+  assert (reverse_string("python") == "nohtyp")==True
+  assert (reverse_string("12345") == "54321")==True
 test_reverse_string()

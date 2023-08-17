@@ -1,4 +1,3 @@
-#Write a python class to implement pow(x,n) 
 class py_solution:
    def pow(self, x, n):
         if x==0 or x==1 or n==1:
