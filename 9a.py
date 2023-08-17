@@ -10,14 +10,12 @@ if c==d:
     for i in range(c):
         if a[i]==b[i]:
             count=0
-        if a[i]!=b[i]:
+        else :
             count=count+1
-    value=math.ceil(c/2)
+            break
+
     if count==0:
         print("All characters are same")
-
-    elif count<value:
-        print("Values are nearly same")
     else: 
         print("Values are not same")
 else:
