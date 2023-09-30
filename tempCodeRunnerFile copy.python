@@ -1,0 +1,34 @@
+import unittest
+
+def even_numbers(numbers):
+    return all(num % 2 == 0 for num in numbers)
+
+class EvenNumbersTestCase(unittest.TestCase):
+    def test_even_numbers(self):
+        # Test case with a list of even numbers
+        numbers = [2, 4, 6, 8, 10]
+        result = even_numbers(numbers)
+        self.assertTrue(result)
+
+        # Test case with a list of odd numbers
+        numbers = [1, 3, 5, 7, 9]
+        result = even_numbers(numbers)
+        self.assertFalse(result)
+
+        # Test case with an empty list
+        numbers = []
+        result = even_numbers(numbers)
+        self.assertTrue(result)
+
+        # Test case with a list containing only one even number
+        numbers = [4]
+        result = even_numbers(numbers)
+        self.assertTrue(result)
+
+        # Test case with a list containing only one odd number
+        numbers = [3]
+        result = even_numbers(numbers)
+        self.assertFalse(result)
+
+if __name__ == '__main__':
+    unittest.main()
